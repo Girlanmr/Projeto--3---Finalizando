@@ -77,8 +77,13 @@ nav.mobile-menu ul li a{
 header .logo{
 	float: left;
 	width: 160px;
+	position: relative;
+	top: -5px;
 	height: 40px;
-	background-color: #ccc;
+	background-image: url(../imagens/logo.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 header nav.desktop-menu ul{
@@ -279,8 +284,8 @@ section.sessao1 .container{
 	float: left;
 	width: 40px;
 	height:40px;
-	position: relative;
-	top:-4px;
+	background-image: url(../imagens/D.jpg);
+	background-size: 100% 100%;
 	border-radius: 20px;
 	background-color: gray;
 }
@@ -396,6 +401,19 @@ section.sessao1 .container{
 	height: 100%;
 	background-color: white;
 	border: 5px solid purple;
+}
+footer{
+	padding: 40px 2%;
+	background-color: #192123;
+	color: whitesmoke;
+	font-size: 14px;
+
+}
+footer p:nth-of-type(1){
+	float: left;
+}
+footer p:nth-of-type(2){
+	float: right;
 }
 @media screen and (max-width: 830px){
 
@@ -526,5 +544,16 @@ section.sessao4 .container{
 	.sessao2 img{
 		top: 16px;
 		margin-top: 20px;
+	}
+	footer{
+		text-align: center;
+	
+	}
+	footer p:nth-of-type(1){
+		float: none;
+	}
+	footer p:nth-of-type(2){
+		float: none;
+		margin-top: 8px;
 	}
 }
